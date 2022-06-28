@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{63CCC873-F3E8-457F-8B03-8D167F7B6B9E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QL_sieuthi</RootNamespace>
+    <AssemblyName>QL_sieuthi</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_kho_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_kho_Main.Designer.cs">
+      <DependentUpon>frm_kho_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_kho_QLHH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_kho_QLHH.Designer.cs">
+      <DependentUpon>frm_kho_QLHH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_kho_QLNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_kho_QLNCC.Designer.cs">
+      <DependentUpon>frm_kho_QLNCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_kho_QLNH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_kho_QLNH.Designer.cs">
+      <DependentUpon>frm_kho_QLNH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_KH_QLKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_KH_QLKH.Designer.cs">
+      <DependentUpon>frm_KH_QLKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_kho_Main.resx">
+      <DependentUpon>frm_kho_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_kho_QLHH.resx">
+      <DependentUpon>frm_kho_QLHH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_kho_QLNCC.resx">
+      <DependentUpon>frm_kho_QLNCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_kho_QLNH.resx">
+      <DependentUpon>frm_kho_QLNH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_KH_QLKH.resx">
+      <DependentUpon>frm_KH_QLKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-staff-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-box.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-open-box-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-increase-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-accounting-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-client-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-available-updates-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sign-out-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS_Qlysieuthi\BUS_Qlysieuthi.csproj">
+      <Project>{C1FD4887-211F-4421-9B6B-D2B60D1EFD66}</Project>
+      <Name>BUS_Qlysieuthi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO_Qlysieuthi\DTO_Qlysieuthi.csproj">
+      <Project>{B6713288-7D80-4D1E-9424-4B71DE23813E}</Project>
+      <Name>DTO_Qlysieuthi</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-clear-32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
