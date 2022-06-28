@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQlykho));
             this.panel1 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -145,6 +146,7 @@
             this.ClientSize = new System.Drawing.Size(818, 510);
             this.Controls.Add(this.panelchildform);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmQlykho";
             this.Text = "Quản lý kho hàng";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

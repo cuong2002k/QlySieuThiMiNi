@@ -8,9 +8,9 @@ using System.Data;
 using DTO_Qlysieuthi;
 namespace DAL_Qlysieuthi
 {
-    public class NhomHang
+    public class NhomHang : DBConnection
     {
-        SqlConnection _conn = new SqlConnection(ConfigurationManager.ConnectionStrings["QLSieuthi"].ToString());
+  
         public DataTable KHO_getNhomHang()
         {
             _conn.Open();
@@ -84,6 +84,18 @@ namespace DAL_Qlysieuthi
             cmd.ExecuteNonQuery();
             _conn.Close();
         }
-        public
+        public DataTable NH_SearchNhomHang(string MaNH)
+        {
+            _conn.Open();
+            DataTable dt = new DataTable();
+            string sql = "";
+            SqlCommand cmd = new SqlCommand(sql, _conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@MaNH",MaNH);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            _conn.Close();
+            return dt;
+        }
     }
 }

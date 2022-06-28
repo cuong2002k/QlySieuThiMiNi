@@ -108,6 +108,7 @@
             this.lstvhanghoa.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lstvhanghoa.FullRowSelect = true;
             this.lstvhanghoa.GridLines = true;
+            this.lstvhanghoa.HideSelection = false;
             this.lstvhanghoa.Location = new System.Drawing.Point(0, 0);
             this.lstvhanghoa.Name = "lstvhanghoa";
             this.lstvhanghoa.Size = new System.Drawing.Size(785, 410);
@@ -494,6 +495,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frm_kho_QLHH";
             this.Text = "QLHH";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
