@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUSConnectDAL.cs" />
+    <Compile Include="BUS_QlyBanHang.cs" />
     <Compile Include="BUS_QlyKhachHang.cs" />
     <Compile Include="BUS_Qlykho.cs" />
     <Compile Include="BUS_QlyNhaCungCap.cs" />

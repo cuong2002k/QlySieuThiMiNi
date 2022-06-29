@@ -10,7 +10,7 @@ using DTO_Qlysieuthi;
 using BUS_Qlysieuthi;
 namespace QL_sieuthi
 {
-    public partial class frm_KH_QLKH : Form
+    public partial class frm_KH_QLKH : Form 
     {
         QlyKhachHang qlyKhachHang = new QlyKhachHang();
         public frm_KH_QLKH()

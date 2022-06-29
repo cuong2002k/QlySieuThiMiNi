@@ -34,7 +34,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.btnkho = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_BanHang = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button6
@@ -129,23 +129,24 @@
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btn_BanHang
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Image = global::QL_sieuthi.Properties.Resources.icons8_staff_64;
-            this.button1.Location = new System.Drawing.Point(5, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(235, 143);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Bán Hàng";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_BanHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
+            this.btn_BanHang.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_BanHang.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_BanHang.FlatAppearance.BorderSize = 0;
+            this.btn_BanHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_BanHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_BanHang.ForeColor = System.Drawing.Color.Black;
+            this.btn_BanHang.Image = global::QL_sieuthi.Properties.Resources.icons8_staff_64;
+            this.btn_BanHang.Location = new System.Drawing.Point(5, 5);
+            this.btn_BanHang.Name = "btn_BanHang";
+            this.btn_BanHang.Size = new System.Drawing.Size(235, 143);
+            this.btn_BanHang.TabIndex = 0;
+            this.btn_BanHang.Text = "Bán Hàng";
+            this.btn_BanHang.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_BanHang.UseVisualStyleBackColor = false;
+            this.btn_BanHang.Click += new System.EventHandler(this.btn_BanHang_Click);
             // 
             // frmMain
             // 
@@ -158,7 +159,7 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.btnkho);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_BanHang);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -170,7 +171,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_BanHang;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnkho;
         private System.Windows.Forms.Button button4;

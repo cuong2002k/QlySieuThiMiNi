@@ -50,16 +50,12 @@
             this.btnxoa = new System.Windows.Forms.ToolStripButton();
             this.btn_lammoi = new System.Windows.Forms.ToolStripButton();
             this.btnthoat = new System.Windows.Forms.ToolStripButton();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvKhacHang)).BeginInit();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dtgvKhacHang
@@ -68,10 +64,10 @@
             this.dtgvKhacHang.BackgroundColor = System.Drawing.Color.White;
             this.dtgvKhacHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvKhacHang.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtgvKhacHang.Location = new System.Drawing.Point(212, 51);
+            this.dtgvKhacHang.Location = new System.Drawing.Point(0, 51);
             this.dtgvKhacHang.Name = "dtgvKhacHang";
             this.dtgvKhacHang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgvKhacHang.Size = new System.Drawing.Size(269, 396);
+            this.dtgvKhacHang.Size = new System.Drawing.Size(481, 396);
             this.dtgvKhacHang.TabIndex = 21;
             // 
             // panel1
@@ -267,40 +263,20 @@
             this.btnthoat.Text = "Thoát";
             this.btnthoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(212, 501);
-            this.panel2.TabIndex = 27;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox1.Image = global::QL_sieuthi.Properties.Resources.icons8_client_64;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(212, 129);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // panel3
             // 
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(212, 447);
+            this.panel3.Location = new System.Drawing.Point(0, 447);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(269, 54);
+            this.panel3.Size = new System.Drawing.Size(481, 54);
             this.panel3.TabIndex = 28;
             // 
             // panel4
             // 
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(212, 0);
+            this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(591, 51);
+            this.panel4.Size = new System.Drawing.Size(803, 51);
             this.panel4.TabIndex = 29;
             // 
             // frm_KH_QLKH
@@ -312,7 +288,6 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frm_KH_QLKH";
@@ -325,8 +300,6 @@
             this.groupBox1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -351,12 +324,10 @@
         private System.Windows.Forms.ToolStripButton btnxoa;
         private System.Windows.Forms.ToolStripButton btn_lammoi;
         private System.Windows.Forms.ToolStripButton btnthoat;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TextBox txtCMND;
         private System.Windows.Forms.TextBox txtSDT;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

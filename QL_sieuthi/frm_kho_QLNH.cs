@@ -74,7 +74,6 @@ namespace QL_sieuthi
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(dtgvnhomhang.Rows.Count.ToString());
             if (checktextboxnotnull() == true)
             {
                 for (int i = 0; i < dtgvnhomhang.Rows.Count - 1; i++)
@@ -97,6 +96,11 @@ namespace QL_sieuthi
 
         private void btnxoa_Click(object sender, EventArgs e)
         {
+            if(dtgvhanghoa.Rows.Count > 1)
+            {
+                MessageBox.Show("Nhóm Hàng Này Tồn Tại Hàng hóa Vui Lòng Thử lại");
+                return;
+            }
             if (txtMaNH.Text != string.Empty) {
                 for (int i = 0; i < dtgvnhomhang.Rows.Count - 1; i++)
                 {
@@ -143,7 +147,15 @@ namespace QL_sieuthi
 
         private void txttimkiem_TextChanged(object sender, EventArgs e)
         {
-            
+             
+            DataSet dtnhomhang = qlynhomhang.NH_SearchNhomHang(txttimkiem.Text);
+            bindingSourceNhomHang.DataSource = dtnhomhang;
+            bindingSourceNhomHang.DataMember = "tbNhomHang";
+            bindingSourceHangHoa.DataSource = bindingSourceNhomHang;
+            bindingSourceHangHoa.DataMember = "DSHangHoaThuocNhomHang";
+            qlynhomhang.NH_SearchNhomHang(txttimkiem.Text);
+            dtgvnhomhang.DataSource = bindingSourceNhomHang;
+            dtgvhanghoa.DataSource = bindingSourceHangHoa;
         }
     }
 }

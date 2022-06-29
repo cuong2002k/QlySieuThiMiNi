@@ -26,7 +26,7 @@ namespace BUS_Qlysieuthi
         public void NH_suaNhomHang(DTO_NhomHang dtonhomhang) {
             dalnhomhang.NH_suaNhomHang(dtonhomhang);
         }
-        public DataTable NH_SearchNhomHang(string MaNH)
+        public DataSet NH_SearchNhomHang(string MaNH)
         {
             return dalnhomhang.NH_SearchNhomHang(MaNH);
         }

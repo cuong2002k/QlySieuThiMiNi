@@ -29,6 +29,10 @@ namespace QL_sieuthi
             frm.Show();
         }
 
-
+        private void btn_BanHang_Click(object sender, EventArgs e)
+        {
+            frm_BH_QLBH frm = new frm_BH_QLBH();
+            frm.Show();
+        }
     }
 }

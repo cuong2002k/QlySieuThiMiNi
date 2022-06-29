@@ -68,11 +68,11 @@ namespace DAL_Qlysieuthi
                 return dt;  
         }
         public void NH_xoaNhomHang(string MaNH) {
-            _conn.Open();
-            string sql = string.Format("DELETE FROM NhomHang WHERE MaNH = '{0}'", MaNH);
-            SqlCommand cmd = new SqlCommand(sql, _conn);
-            cmd.ExecuteNonQuery();
-            _conn.Close();
+                _conn.Open();
+                string sql = string.Format("DELETE FROM NhomHang WHERE MaNH = '{0}'", MaNH);
+                SqlCommand cmd = new SqlCommand(sql, _conn);
+                cmd.ExecuteNonQuery();
+                _conn.Close();      
         }
         public void NH_suaNhomHang(DTO_NhomHang dtonhomhang) {
             _conn.Open();
@@ -84,16 +84,42 @@ namespace DAL_Qlysieuthi
             cmd.ExecuteNonQuery();
             _conn.Close();
         }
-        public DataTable NH_SearchNhomHang(string MaNH)
+        public DataSet NH_SearchNhomHang(string MaNH)
         {
-            _conn.Open();
-            DataTable dt = new DataTable();
-            string sql = "";
-            SqlCommand cmd = new SqlCommand(sql, _conn);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@MaNH",MaNH);
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            da.Fill(dt);
+            //_conn.Open();
+            //DataTable dt = new DataTable();
+            //string sql = "";
+            //SqlCommand cmd = new SqlCommand(sql, _conn);
+            //cmd.CommandType = CommandType.StoredProcedure;
+        
+            //SqlDataAdapter da = new SqlDataAdapter(cmd);
+            //da.Fill(dt);
+            //_conn.Close();
+
+            // tạo 1 datatable luu ds hang hoa
+            DataSet dt = new DataSet();
+            string sqlnhomhang = "QLNH_TIMNHOMHANG";
+            SqlCommand cmdnhomhang = new SqlCommand(sqlnhomhang, _conn);
+            cmdnhomhang.CommandType = CommandType.StoredProcedure;
+            cmdnhomhang.Parameters.AddWithValue("@MaNH",MaNH);
+            SqlDataAdapter datanhomhang = new SqlDataAdapter(cmdnhomhang);
+            datanhomhang.Fill(dt, "tbNhomHang");
+
+            string sqlhanghoa = string.Format("SELECT * FROM HangHoa where LoaiHang LIKE '%'+'{0}'+'%'", MaNH);
+            SqlCommand cmdhanghoa = new SqlCommand(sqlhanghoa, _conn);
+            cmdhanghoa.CommandType = CommandType.Text;
+            SqlDataAdapter datahanghoa = new SqlDataAdapter(cmdhanghoa);
+            datahanghoa.Fill(dt, "tbHangHoa");
+          
+                DataRelation relation = new DataRelation(
+               "DSHangHoaThuocNhomHang",
+               dt.Tables["tbNhomHang"].Columns["MaNH"],
+               dt.Tables["tbHangHoa"].Columns["LoaiHang"]
+
+               );
+                dt.Relations.Add(relation);
+
+           
             _conn.Close();
             return dt;
         }
