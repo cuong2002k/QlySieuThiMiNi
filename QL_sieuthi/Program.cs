@@ -15,9 +15,9 @@ namespace QL_sieuthi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMain());
+            //Application.Run(new frmMain());
             //Application.Run(new frm_kho_QLHH());
-           
+            Application.Run(new frm_BH_QLBH());
         }
     }
 }

@@ -6,12 +6,11 @@ using DTO_Qlysieuthi;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using DTO_Qlysieuthi;
 namespace DAL_Qlysieuthi
 {
-    public class KHThanThiet
+    public class KHThanThiet : DBConnection
     {
-        SqlConnection _conn = new SqlConnection(ConfigurationManager.ConnectionStrings["QLSieuthi"].ToString());
+        
         public DataTable KH_getKhachHang()
         {
             _conn.Open();
@@ -36,6 +35,5 @@ namespace DAL_Qlysieuthi
             cmd.ExecuteNonQuery();
             _conn.Close();
         }
-
     }
 }

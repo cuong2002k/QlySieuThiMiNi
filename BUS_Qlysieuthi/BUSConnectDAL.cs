@@ -8,5 +8,6 @@ namespace BUS_Qlysieuthi
     public class BUSConnectDAL
     {
        protected DAL_BanHang dalbanhang = new DAL_BanHang();
+        protected DAL_HoaDon dalhoadon = new DAL_HoaDon();
     }
 }

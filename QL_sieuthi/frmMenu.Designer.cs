@@ -28,14 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
+            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.button6 = new System.Windows.Forms.Button();
             this.btnkhachhang = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.btnkho = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btn_BanHang = new System.Windows.Forms.Button();
+            this.gunaPanel2 = new Guna.UI.WinForms.GunaPanel();
+            this.gunaControlBox1 = new Guna.UI.WinForms.GunaControlBox();
+            this.gunaPanel1.SuspendLayout();
+            this.gunaPanel2.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // gunaElipse1
+            // 
+            this.gunaElipse1.TargetControl = this;
+            // 
+            // gunaPanel1
+            // 
+            this.gunaPanel1.Controls.Add(this.button6);
+            this.gunaPanel1.Controls.Add(this.btnkhachhang);
+            this.gunaPanel1.Controls.Add(this.button4);
+            this.gunaPanel1.Controls.Add(this.btnkho);
+            this.gunaPanel1.Controls.Add(this.button2);
+            this.gunaPanel1.Controls.Add(this.btn_BanHang);
+            this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gunaPanel1.Location = new System.Drawing.Point(0, 25);
+            this.gunaPanel1.Name = "gunaPanel1";
+            this.gunaPanel1.Size = new System.Drawing.Size(725, 295);
+            this.gunaPanel1.TabIndex = 0;
             // 
             // button6
             // 
@@ -47,10 +72,10 @@
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.Black;
             this.button6.Image = global::QL_sieuthi.Properties.Resources.icons8_accounting_80;
-            this.button6.Location = new System.Drawing.Point(487, 154);
+            this.button6.Location = new System.Drawing.Point(487, 146);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(235, 143);
-            this.button6.TabIndex = 5;
+            this.button6.TabIndex = 11;
             this.button6.Text = "Báo cáo";
             this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button6.UseVisualStyleBackColor = false;
@@ -65,14 +90,13 @@
             this.btnkhachhang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnkhachhang.ForeColor = System.Drawing.Color.Black;
             this.btnkhachhang.Image = global::QL_sieuthi.Properties.Resources.icons8_client_64;
-            this.btnkhachhang.Location = new System.Drawing.Point(487, 5);
+            this.btnkhachhang.Location = new System.Drawing.Point(487, -3);
             this.btnkhachhang.Name = "btnkhachhang";
             this.btnkhachhang.Size = new System.Drawing.Size(235, 143);
-            this.btnkhachhang.TabIndex = 4;
+            this.btnkhachhang.TabIndex = 10;
             this.btnkhachhang.Text = "Khách Hàng";
             this.btnkhachhang.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnkhachhang.UseVisualStyleBackColor = false;
-            this.btnkhachhang.Click += new System.EventHandler(this.btnkhachhang_Click);
             // 
             // button4
             // 
@@ -84,10 +108,10 @@
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.Black;
             this.button4.Image = global::QL_sieuthi.Properties.Resources.icons8_increase_80;
-            this.button4.Location = new System.Drawing.Point(246, 154);
+            this.button4.Location = new System.Drawing.Point(246, 146);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(235, 143);
-            this.button4.TabIndex = 3;
+            this.button4.TabIndex = 9;
             this.button4.Text = "Doanh Thu";
             this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button4.UseVisualStyleBackColor = false;
@@ -102,14 +126,14 @@
             this.btnkho.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnkho.ForeColor = System.Drawing.Color.Black;
             this.btnkho.Image = global::QL_sieuthi.Properties.Resources.icons8_open_box_80;
-            this.btnkho.Location = new System.Drawing.Point(5, 154);
+            this.btnkho.Location = new System.Drawing.Point(5, 146);
             this.btnkho.Name = "btnkho";
             this.btnkho.Size = new System.Drawing.Size(235, 143);
-            this.btnkho.TabIndex = 2;
+            this.btnkho.TabIndex = 8;
             this.btnkho.Text = "Kho";
             this.btnkho.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnkho.UseVisualStyleBackColor = false;
-            this.btnkho.Click += new System.EventHandler(this.btnkho_Click);
+            this.btnkho.Click += new System.EventHandler(this.btnkho_Click_1);
             // 
             // button2
             // 
@@ -121,10 +145,10 @@
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Black;
             this.button2.Image = global::QL_sieuthi.Properties.Resources.icons8_user_80;
-            this.button2.Location = new System.Drawing.Point(246, 5);
+            this.button2.Location = new System.Drawing.Point(246, -3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(235, 143);
-            this.button2.TabIndex = 1;
+            this.button2.TabIndex = 7;
             this.button2.Text = "Nhân Viên";
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button2.UseVisualStyleBackColor = false;
@@ -139,44 +163,71 @@
             this.btn_BanHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_BanHang.ForeColor = System.Drawing.Color.Black;
             this.btn_BanHang.Image = global::QL_sieuthi.Properties.Resources.icons8_staff_64;
-            this.btn_BanHang.Location = new System.Drawing.Point(5, 5);
+            this.btn_BanHang.Location = new System.Drawing.Point(5, -3);
             this.btn_BanHang.Name = "btn_BanHang";
             this.btn_BanHang.Size = new System.Drawing.Size(235, 143);
-            this.btn_BanHang.TabIndex = 0;
+            this.btn_BanHang.TabIndex = 6;
             this.btn_BanHang.Text = "Bán Hàng";
             this.btn_BanHang.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_BanHang.UseVisualStyleBackColor = false;
-            this.btn_BanHang.Click += new System.EventHandler(this.btn_BanHang_Click);
+            this.btn_BanHang.Click += new System.EventHandler(this.btn_BanHang_Click_1);
+            // 
+            // gunaPanel2
+            // 
+            this.gunaPanel2.Controls.Add(this.gunaControlBox1);
+            this.gunaPanel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gunaPanel2.Location = new System.Drawing.Point(0, 0);
+            this.gunaPanel2.Name = "gunaPanel2";
+            this.gunaPanel2.Size = new System.Drawing.Size(725, 25);
+            this.gunaPanel2.TabIndex = 1;
+            // 
+            // gunaControlBox1
+            // 
+            this.gunaControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.gunaControlBox1.AnimationHoverSpeed = 0.07F;
+            this.gunaControlBox1.AnimationSpeed = 0.03F;
+            this.gunaControlBox1.IconColor = System.Drawing.Color.Black;
+            this.gunaControlBox1.IconSize = 15F;
+            this.gunaControlBox1.Location = new System.Drawing.Point(698, 3);
+            this.gunaControlBox1.Name = "gunaControlBox1";
+            this.gunaControlBox1.OnHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(58)))), ((int)(((byte)(183)))));
+            this.gunaControlBox1.OnHoverIconColor = System.Drawing.Color.White;
+            this.gunaControlBox1.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaControlBox1.Size = new System.Drawing.Size(24, 17);
+            this.gunaControlBox1.TabIndex = 0;
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(727, 303);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.btnkhachhang);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.btnkho);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.btn_BanHang);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.ClientSize = new System.Drawing.Size(725, 320);
+            this.Controls.Add(this.gunaPanel1);
+            this.Controls.Add(this.gunaPanel2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý siêu thị";
+            this.gunaPanel1.ResumeLayout(false);
+            this.gunaPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btn_BanHang;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnkho;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button btnkhachhang;
+        private Guna.UI.WinForms.GunaElipse gunaElipse1;
+        private Guna.UI.WinForms.GunaPanel gunaPanel1;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnkhachhang;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnkho;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_BanHang;
+        private Guna.UI.WinForms.GunaPanel gunaPanel2;
+        private Guna.UI.WinForms.GunaControlBox gunaControlBox1;
     }
 }
 

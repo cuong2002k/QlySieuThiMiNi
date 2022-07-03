@@ -153,6 +153,16 @@ namespace QL_sieuthi.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_double_tick_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-double-tick-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_increase_80 {
             get {
                 object obj = ResourceManager.GetObject("icons8-increase-80", resourceCulture);
@@ -216,6 +226,16 @@ namespace QL_sieuthi.Properties {
         internal static System.Drawing.Bitmap icons8_staff_64 {
             get {
                 object obj = ResourceManager.GetObject("icons8-staff-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_tick_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-tick-64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

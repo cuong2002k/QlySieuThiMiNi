@@ -25,7 +25,7 @@ namespace QL_sieuthi
 
         private void frm_BH_TTSP_Load(object sender, EventArgs e)
         {
-            
+           
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
