@@ -37,7 +37,7 @@
             this.ClientSize = new System.Drawing.Size(786, 443);
             this.Name = "frm_BH_ReportHD";
             this.Text = "Hóa Đơn";
-            
+            //
             this.ResumeLayout(false);
 
         }
