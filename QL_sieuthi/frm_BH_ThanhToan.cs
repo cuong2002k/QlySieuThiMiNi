@@ -8,7 +8,8 @@ using System.Text;
 using System.Windows.Forms;
 using BUS_Qlysieuthi;
 using DTO_Qlysieuthi;
-using CrystalDecisions.CrystalReports.Engine;
+using DevExpress.XtraReports.UI;
+
 namespace QL_sieuthi
 {
     public partial class frm_BH_ThanhToan : Form
@@ -97,8 +98,14 @@ namespace QL_sieuthi
             DTO_HoaDon dtohd = new DTO_HoaDon(sohd, MaNV,txtMaKH.Text,float.Parse(txtTienThue.Text));
             BanHang.BH_LapHoaDon(dtohd);
             frm_BH_QLBH.frmBH.themsanphamvaohoadonCT(sohd);
-            //DataTable rpt = new DataTable();
-            
+            DataTable rpt = new DataTable();
+
+            rpt = BanHang.BH_RPTHoaDon(sohd);
+            XtraReport rpthoadon = new XtraReport();
+            rpthoadon.DataSource = rpt;
+            rpthoadon.ShowPreviewDialog();
+
+
             MessageBox.Show("Thanh toán thành công");
         }
         

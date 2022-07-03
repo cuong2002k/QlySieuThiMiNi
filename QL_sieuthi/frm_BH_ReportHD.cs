@@ -9,11 +9,13 @@ using System.Windows.Forms;
 
 namespace QL_sieuthi
 {
-    public partial class frm_BH_ReportHD : Form
+    public partial class frm_BH_ReportHD : DevExpress.XtraEditors.XtraForm
     {
         public frm_BH_ReportHD()
         {
             InitializeComponent();
         }
+
+       
     }
 }
