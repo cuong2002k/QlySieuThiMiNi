@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using BUS_Qlysieuthi;
 using DTO_Qlysieuthi;
 using DevExpress.XtraReports.UI;
+using CrystalDecisions.CrystalReports.Engine;
 
 namespace QL_sieuthi
 {
@@ -58,26 +59,41 @@ namespace QL_sieuthi
         {
             double TienThue = double.Parse(txtTienThue.Text);
             TienThue = (double)TienThue / 100;
-            TienThue = (double)TienThue * double.Parse(txtSotientamtinh.Text);
-            txtTongTienThanhToan.Text = (double.Parse(txtSotientamtinh.Text) + TienThue).ToString();
+            TienThue = (double)TienThue * int.Parse(txtSotientamtinh.Text);
+            txtTongTienThanhToan.Text = (int.Parse(txtSotientamtinh.Text) + TienThue).ToString();
         }
         private void frm_BH_ThanhToan_Load(object sender, EventArgs e)
         {
             TinhThue();
 
         }
-
+        bool checkNumber(string s)
+        {
+            int num;
+            bool check = int.TryParse(s, out num);
+            return check;
+        }
         private void txtTienKhachDua_TextChanged(object sender, EventArgs e)
         {
-            if((double.Parse(txtTienKhachDua.Text) >= double.Parse(txtTongTienThanhToan.Text)) && txtTienKhachDua.Text != string.Empty)
+            if(checkNumber(txtTienKhachDua.Text) == false && txtTienKhachDua.Text != string.Empty)
             {
-                txtTienTraKhach.Text = (double.Parse(txtTienKhachDua.Text) - double.Parse(txtTongTienThanhToan.Text)).ToString();
-                btnThanhToan.Enabled = true;
+                MessageBox.Show("Số tiền khách đưa không hợp lệ!!!");
+                txtTienKhachDua.Clear();
+                return;
             }
-            else
+            if(txtTienKhachDua.Text != string.Empty)
             {
-                btnThanhToan.Enabled = false;
+                if ((int.Parse(txtTienKhachDua.Text) >= int.Parse(txtTongTienThanhToan.Text)))
+                {
+                    txtTienTraKhach.Text = (int.Parse(txtTienKhachDua.Text) - int.Parse(txtTongTienThanhToan.Text)).ToString();
+                    btnThanhToan.Enabled = true;
+                }
+                else
+                {
+                    btnThanhToan.Enabled = false;
+                }
             }
+            
         }
 
         private void btnThanhToan_Click(object sender, EventArgs e)
@@ -101,11 +117,25 @@ namespace QL_sieuthi
             DataTable rpt = new DataTable();
 
             rpt = BanHang.BH_RPTHoaDon(sohd);
-            XtraReport rpthoadon = new XtraReport();
-            rpthoadon.DataSource = rpt;
-            rpthoadon.ShowPreviewDialog();
+            hoadon hoadonreport = new hoadon();
+            TextObject rptSohd = (TextObject)hoadonreport.ReportDefinition.Sections["Section2"].ReportObjects["SoHD"];
+            TextObject rpttienkhachdua = (TextObject)hoadonreport.ReportDefinition.Sections["Section4"].ReportObjects["TienKhachDua"];
+            TextObject rpttientrakhach = (TextObject)hoadonreport.ReportDefinition.Sections["Section4"].ReportObjects["TienTraKhach"];
+            rpttienkhachdua.Text = txtTienKhachDua.Text;
+            rptSohd.Text = sohd.ToString();
+            rpttientrakhach.Text = txtTienTraKhach.Text;
 
 
+            hoadonreport.SetDataSource(rpt);
+            
+
+
+            frm_BH_ReportHD reportfrm = new frm_BH_ReportHD();
+            reportfrm.crystalReportViewer2.ReportSource = hoadonreport;
+            reportfrm.ShowDialog();
+            this.Close();
+            frm_BH_QLBH.frmBH.lstHangHoa.Items.Clear();
+            frm_BH_QLBH.frmBH.btnTien.Text = "0";
             MessageBox.Show("Thanh toán thành công");
         }
         

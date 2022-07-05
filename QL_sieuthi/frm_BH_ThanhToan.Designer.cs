@@ -117,7 +117,7 @@
             // 
             this.txtTienThue.BorderRadius = 10;
             this.txtTienThue.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTienThue.DefaultText = "2.7";
+            this.txtTienThue.DefaultText = "0.0";
             this.txtTienThue.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtTienThue.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtTienThue.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));

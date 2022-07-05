@@ -292,6 +292,6 @@
         public System.Windows.Forms.ListView lstHangHoa;
         private Guna.UI2.WinForms.Guna2TextBox txtBarcodeHangHoa;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2Button btnTien;
+        public Guna.UI2.WinForms.Guna2Button btnTien;
     }
 }
