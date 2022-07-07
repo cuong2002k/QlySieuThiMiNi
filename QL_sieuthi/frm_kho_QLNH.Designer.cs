@@ -37,14 +37,10 @@
             this.btnxoa = new System.Windows.Forms.ToolStripButton();
             this.btn_lammoi = new System.Windows.Forms.ToolStripButton();
             this.btnthoat = new System.Windows.Forms.ToolStripButton();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtTenNH = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtMaNH = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.txttimkiem = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -53,9 +49,12 @@
             this.dtgvnhomhang = new System.Windows.Forms.DataGridView();
             this.bindingSourceNhomHang = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSourceHangHoa = new System.Windows.Forms.BindingSource(this.components);
+            this.txttimkiem = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.txtMaNH = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtTenNH = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel2.SuspendLayout();
             this.toolStrip1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -64,12 +63,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtgvnhomhang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceNhomHang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceHangHoa)).BeginInit();
+            this.guna2GroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.guna2GroupBox1);
             this.panel2.Controls.Add(this.toolStrip1);
-            this.panel2.Controls.Add(this.groupBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.Location = new System.Drawing.Point(492, 79);
             this.panel2.Name = "panel2";
@@ -80,13 +80,14 @@
             // 
             this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnThem,
-            this.btnsua,
-            this.btnxoa,
+            this.btnthoat,
             this.btn_lammoi,
-            this.btnthoat});
+            this.btnxoa,
+            this.btnsua,
+            this.btnThem});
             this.toolStrip1.Location = new System.Drawing.Point(0, 354);
             this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.toolStrip1.Size = new System.Drawing.Size(292, 54);
             this.toolStrip1.TabIndex = 18;
             this.toolStrip1.Text = "toolStrip1";
@@ -146,54 +147,27 @@
             this.btnthoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click);
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.txtTenNH);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.txtMaNH);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Location = new System.Drawing.Point(0, 0);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(292, 408);
-            this.groupBox1.TabIndex = 19;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Thông Tin Nhóm Hàng";
-            // 
-            // txtTenNH
-            // 
-            this.txtTenNH.Location = new System.Drawing.Point(97, 94);
-            this.txtTenNH.Name = "txtTenNH";
-            this.txtTenNH.Size = new System.Drawing.Size(149, 20);
-            this.txtTenNH.TabIndex = 3;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(10, 98);
+            this.label2.Location = new System.Drawing.Point(15, 124);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 13);
+            this.label2.Size = new System.Drawing.Size(94, 15);
             this.label2.TabIndex = 2;
             this.label2.Text = "Tên Nhóm Hàng";
-            // 
-            // txtMaNH
-            // 
-            this.txtMaNH.Location = new System.Drawing.Point(97, 59);
-            this.txtMaNH.Name = "txtMaNH";
-            this.txtMaNH.Size = new System.Drawing.Size(100, 20);
-            this.txtMaNH.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 63);
+            this.label1.Location = new System.Drawing.Point(16, 77);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 13);
+            this.label1.Size = new System.Drawing.Size(93, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã Nhóm Hàng";
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(174)))), ((int)(((byte)(197)))));
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -204,6 +178,7 @@
             // panel4
             // 
             this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(174)))), ((int)(((byte)(197)))));
             this.panel4.Controls.Add(this.txttimkiem);
             this.panel4.Controls.Add(this.label3);
             this.panel4.Location = new System.Drawing.Point(0, 0);
@@ -211,24 +186,15 @@
             this.panel4.Size = new System.Drawing.Size(492, 79);
             this.panel4.TabIndex = 0;
             // 
-            // txttimkiem
-            // 
-            this.txttimkiem.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txttimkiem.Location = new System.Drawing.Point(157, 30);
-            this.txttimkiem.Name = "txttimkiem";
-            this.txttimkiem.Size = new System.Drawing.Size(250, 20);
-            this.txttimkiem.TabIndex = 1;
-            this.txttimkiem.TextChanged += new System.EventHandler(this.txttimkiem_TextChanged);
-            // 
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(32, 33);
+            this.label3.Location = new System.Drawing.Point(71, 34);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(109, 13);
+            this.label3.Size = new System.Drawing.Size(82, 13);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Tìm kiếm theo mã NH";
+            this.label3.Text = "Mã Nhóm Hàng";
             // 
             // panel3
             // 
@@ -264,6 +230,7 @@
             // 
             // panel6
             // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(174)))), ((int)(((byte)(197)))));
             this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel6.Location = new System.Drawing.Point(0, 354);
             this.panel6.Name = "panel6";
@@ -284,6 +251,92 @@
             this.dtgvnhomhang.TabIndex = 0;
             this.dtgvnhomhang.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dtgvnhomhang_MouseClick);
             // 
+            // txttimkiem
+            // 
+            this.txttimkiem.BorderRadius = 10;
+            this.txttimkiem.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txttimkiem.DefaultText = "";
+            this.txttimkiem.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txttimkiem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txttimkiem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txttimkiem.DisabledState.Parent = this.txttimkiem;
+            this.txttimkiem.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txttimkiem.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txttimkiem.FocusedState.Parent = this.txttimkiem;
+            this.txttimkiem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txttimkiem.HoverState.Parent = this.txttimkiem;
+            this.txttimkiem.Location = new System.Drawing.Point(159, 23);
+            this.txttimkiem.Name = "txttimkiem";
+            this.txttimkiem.PasswordChar = '\0';
+            this.txttimkiem.PlaceholderText = "";
+            this.txttimkiem.SelectedText = "";
+            this.txttimkiem.ShadowDecoration.Parent = this.txttimkiem;
+            this.txttimkiem.Size = new System.Drawing.Size(232, 36);
+            this.txttimkiem.TabIndex = 1;
+            // 
+            // guna2GroupBox1
+            // 
+            this.guna2GroupBox1.Controls.Add(this.txtTenNH);
+            this.guna2GroupBox1.Controls.Add(this.txtMaNH);
+            this.guna2GroupBox1.Controls.Add(this.label2);
+            this.guna2GroupBox1.Controls.Add(this.label1);
+            this.guna2GroupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2GroupBox1.ForeColor = System.Drawing.Color.Black;
+            this.guna2GroupBox1.Location = new System.Drawing.Point(0, 0);
+            this.guna2GroupBox1.Name = "guna2GroupBox1";
+            this.guna2GroupBox1.ShadowDecoration.Parent = this.guna2GroupBox1;
+            this.guna2GroupBox1.Size = new System.Drawing.Size(292, 354);
+            this.guna2GroupBox1.TabIndex = 2;
+            this.guna2GroupBox1.Text = "Thông Tin Nhóm Hàng";
+            // 
+            // txtMaNH
+            // 
+            this.txtMaNH.BorderRadius = 10;
+            this.txtMaNH.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMaNH.DefaultText = "";
+            this.txtMaNH.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtMaNH.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtMaNH.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMaNH.DisabledState.Parent = this.txtMaNH;
+            this.txtMaNH.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMaNH.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMaNH.FocusedState.Parent = this.txtMaNH;
+            this.txtMaNH.ForeColor = System.Drawing.Color.Black;
+            this.txtMaNH.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMaNH.HoverState.Parent = this.txtMaNH;
+            this.txtMaNH.Location = new System.Drawing.Point(115, 66);
+            this.txtMaNH.Name = "txtMaNH";
+            this.txtMaNH.PasswordChar = '\0';
+            this.txtMaNH.PlaceholderText = "";
+            this.txtMaNH.SelectedText = "";
+            this.txtMaNH.ShadowDecoration.Parent = this.txtMaNH;
+            this.txtMaNH.Size = new System.Drawing.Size(157, 36);
+            this.txtMaNH.TabIndex = 4;
+            // 
+            // txtTenNH
+            // 
+            this.txtTenNH.BorderRadius = 10;
+            this.txtTenNH.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTenNH.DefaultText = "";
+            this.txtTenNH.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTenNH.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTenNH.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTenNH.DisabledState.Parent = this.txtTenNH;
+            this.txtTenNH.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTenNH.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTenNH.FocusedState.Parent = this.txtTenNH;
+            this.txtTenNH.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTenNH.HoverState.Parent = this.txtTenNH;
+            this.txtTenNH.Location = new System.Drawing.Point(115, 108);
+            this.txtTenNH.Name = "txtTenNH";
+            this.txtTenNH.PasswordChar = '\0';
+            this.txtTenNH.PlaceholderText = "";
+            this.txtTenNH.SelectedText = "";
+            this.txtTenNH.ShadowDecoration.Parent = this.txtTenNH;
+            this.txtTenNH.Size = new System.Drawing.Size(157, 36);
+            this.txtTenNH.TabIndex = 5;
+            // 
             // frm_kho_QLNH
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -300,8 +353,6 @@
             this.panel2.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
@@ -311,6 +362,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtgvnhomhang)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceNhomHang)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceHangHoa)).EndInit();
+            this.guna2GroupBox1.ResumeLayout(false);
+            this.guna2GroupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -318,10 +371,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtTenNH;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtMaNH;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton btnThem;
@@ -332,7 +382,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox txttimkiem;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dtgvnhomhang;
         private System.Windows.Forms.Panel panel5;
@@ -340,5 +389,9 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.BindingSource bindingSourceNhomHang;
         private System.Windows.Forms.BindingSource bindingSourceHangHoa;
+        private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
+        private Guna.UI2.WinForms.Guna2TextBox txtTenNH;
+        private Guna.UI2.WinForms.Guna2TextBox txtMaNH;
+        private Guna.UI2.WinForms.Guna2TextBox txttimkiem;
     }
 }

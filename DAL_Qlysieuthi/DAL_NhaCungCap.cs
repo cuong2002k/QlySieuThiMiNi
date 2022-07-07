@@ -46,7 +46,6 @@ namespace DAL_Qlysieuthi
             DataRelation relation = new DataRelation(
                 "DSHangHoaTheoNCC", data.Tables["tbNhaCungCap"].Columns["MaNCC"],
                                     data.Tables["tbHangHoa"].Columns["NhaCungCap"]
-                
                 );
             data.Relations.Add(relation);
             _conn.Close();

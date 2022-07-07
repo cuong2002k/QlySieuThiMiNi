@@ -139,6 +139,12 @@
     <Compile Include="frm_kho_Main.Designer.cs">
       <DependentUpon>frm_kho_Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_kho_PhieuNhapHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_kho_PhieuNhapHang.Designer.cs">
+      <DependentUpon>frm_kho_PhieuNhapHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_kho_QLHH.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,6 +163,18 @@
     <Compile Include="frm_kho_QLNH.Designer.cs">
       <DependentUpon>frm_kho_QLNH.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_kho_ReportHH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_kho_ReportHH.Designer.cs">
+      <DependentUpon>frm_kho_ReportHH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_kho_TTHHnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_kho_TTHHnhap.Designer.cs">
+      <DependentUpon>frm_kho_TTHHnhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_KH_QLKH.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,6 +189,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportHangHoa.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportHangHoa.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -189,6 +213,9 @@
     <EmbeddedResource Include="frm_kho_Main.resx">
       <DependentUpon>frm_kho_Main.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_kho_PhieuNhapHang.resx">
+      <DependentUpon>frm_kho_PhieuNhapHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_kho_QLHH.resx">
       <DependentUpon>frm_kho_QLHH.cs</DependentUpon>
     </EmbeddedResource>
@@ -197,6 +224,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_kho_QLNH.resx">
       <DependentUpon>frm_kho_QLNH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_kho_ReportHH.resx">
+      <DependentUpon>frm_kho_ReportHH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_kho_TTHHnhap.resx">
+      <DependentUpon>frm_kho_TTHHnhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_KH_QLKH.resx">
       <DependentUpon>frm_KH_QLKH.cs</DependentUpon>
@@ -210,6 +243,10 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportHangHoa.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportHangHoa.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="packages.config" />
@@ -298,10 +335,33 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\icons8-goods-64.png" />
+  </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-goods-64 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-goods-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-goods-32 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-goods-32 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-goods-32 %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-report-card-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-save-32 %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

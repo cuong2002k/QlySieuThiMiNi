@@ -32,21 +32,35 @@ namespace QL_sieuthi
             ChildForm.Show();
 
         }
-        private void btn_kho_QLHH_Click(object sender, EventArgs e)
+
+        private void btnHangHoa_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new frm_kho_QLHH());
+            frm_kho_QLHH frm = new frm_kho_QLHH();
+            OpenChildForm(frm);
         }
 
-        private void btn_kho_QLNCC_Click(object sender, EventArgs e)
+        private void frmQlykho_Load(object sender, EventArgs e)
         {
-            OpenChildForm(new frm_kho_QLNCC());
+            frm_kho_QLHH frm = new frm_kho_QLHH();
+            OpenChildForm(frm);
         }
 
-        private void btn_kho_QLNH_Click(object sender, EventArgs e)
+        private void guna2Button2_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new frm_kho_QLNH());
+            frm_kho_QLNCC frm = new frm_kho_QLNCC();
+            OpenChildForm(frm);
         }
 
-       
+        private void btnnhomhang_Click(object sender, EventArgs e)
+        {
+            frm_kho_QLNH frm = new frm_kho_QLNH();
+            OpenChildForm(frm);
+        }
+
+        private void btnNhapHang_Click(object sender, EventArgs e)
+        {
+            frm_kho_PhieuNhapHang frm = new frm_kho_PhieuNhapHang();
+            OpenChildForm(frm);
+        }
     }
 }

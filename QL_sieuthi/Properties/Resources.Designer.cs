@@ -163,6 +163,66 @@ namespace QL_sieuthi.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_goods_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-goods-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_goods_32__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-goods-32 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_goods_32__2_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-goods-32 (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_goods_32__3_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-goods-32 (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_goods_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-goods-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_goods_64__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-goods-64 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_increase_80 {
             get {
                 object obj = ResourceManager.GetObject("icons8-increase-80", resourceCulture);
@@ -183,6 +243,16 @@ namespace QL_sieuthi.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_report_card_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-report-card-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_save_16 {
             get {
                 object obj = ResourceManager.GetObject("icons8-save-16", resourceCulture);
@@ -196,6 +266,16 @@ namespace QL_sieuthi.Properties {
         internal static System.Drawing.Bitmap icons8_save_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8-save-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_save_32__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-save-32 (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

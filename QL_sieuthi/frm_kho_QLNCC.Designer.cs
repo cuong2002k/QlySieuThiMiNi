@@ -32,19 +32,19 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_kho_QLNCC));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.txttimkiem = new System.Windows.Forms.TextBox();
+            this.txttimkiem = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.btnThem = new System.Windows.Forms.ToolStripButton();
-            this.btnsua = new System.Windows.Forms.ToolStripButton();
-            this.btnxoa = new System.Windows.Forms.ToolStripButton();
-            this.btn_lammoi = new System.Windows.Forms.ToolStripButton();
             this.btnthoat = new System.Windows.Forms.ToolStripButton();
+            this.btn_lammoi = new System.Windows.Forms.ToolStripButton();
+            this.btnxoa = new System.Windows.Forms.ToolStripButton();
+            this.btnsua = new System.Windows.Forms.ToolStripButton();
+            this.btnThem = new System.Windows.Forms.ToolStripButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtTenNCC = new System.Windows.Forms.TextBox();
+            this.txtTenNCC = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtMaNCC = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtMaNCC = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -68,6 +68,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(174)))), ((int)(((byte)(197)))));
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -77,6 +78,7 @@
             // 
             // panel4
             // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(174)))), ((int)(((byte)(197)))));
             this.panel4.Controls.Add(this.txttimkiem);
             this.panel4.Controls.Add(this.label3);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
@@ -87,21 +89,37 @@
             // 
             // txttimkiem
             // 
-            this.txttimkiem.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txttimkiem.Location = new System.Drawing.Point(157, 30);
+            this.txttimkiem.BorderRadius = 10;
+            this.txttimkiem.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txttimkiem.DefaultText = "";
+            this.txttimkiem.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txttimkiem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txttimkiem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txttimkiem.DisabledState.Parent = this.txttimkiem;
+            this.txttimkiem.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txttimkiem.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txttimkiem.FocusedState.Parent = this.txttimkiem;
+            this.txttimkiem.ForeColor = System.Drawing.Color.Black;
+            this.txttimkiem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txttimkiem.HoverState.Parent = this.txttimkiem;
+            this.txttimkiem.Location = new System.Drawing.Point(162, 22);
             this.txttimkiem.Name = "txttimkiem";
-            this.txttimkiem.Size = new System.Drawing.Size(250, 20);
+            this.txttimkiem.PasswordChar = '\0';
+            this.txttimkiem.PlaceholderText = "";
+            this.txttimkiem.SelectedText = "";
+            this.txttimkiem.ShadowDecoration.Parent = this.txttimkiem;
+            this.txttimkiem.Size = new System.Drawing.Size(257, 36);
             this.txttimkiem.TabIndex = 1;
             // 
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(32, 33);
+            this.label3.Location = new System.Drawing.Point(61, 33);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(115, 13);
+            this.label3.Size = new System.Drawing.Size(95, 13);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Tìm kiếm theo mã NCC";
+            this.label3.Text = "Mã Nhà Cung Cấp";
             // 
             // panel2
             // 
@@ -117,60 +135,17 @@
             // 
             this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnThem,
-            this.btnsua,
-            this.btnxoa,
+            this.btnthoat,
             this.btn_lammoi,
-            this.btnthoat});
+            this.btnxoa,
+            this.btnsua,
+            this.btnThem});
             this.toolStrip1.Location = new System.Drawing.Point(0, 393);
             this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.toolStrip1.Size = new System.Drawing.Size(292, 54);
             this.toolStrip1.TabIndex = 18;
             this.toolStrip1.Text = "toolStrip1";
-            // 
-            // btnThem
-            // 
-            this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
-            this.btnThem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnThem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(41, 51);
-            this.btnThem.Text = "Thêm";
-            this.btnThem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
-            // 
-            // btnsua
-            // 
-            this.btnsua.Image = ((System.Drawing.Image)(resources.GetObject("btnsua.Image")));
-            this.btnsua.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnsua.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnsua.Name = "btnsua";
-            this.btnsua.Size = new System.Drawing.Size(36, 51);
-            this.btnsua.Text = "Sửa";
-            this.btnsua.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnsua.Click += new System.EventHandler(this.btnsua_Click);
-            // 
-            // btnxoa
-            // 
-            this.btnxoa.Image = ((System.Drawing.Image)(resources.GetObject("btnxoa.Image")));
-            this.btnxoa.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnxoa.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnxoa.Name = "btnxoa";
-            this.btnxoa.Size = new System.Drawing.Size(36, 51);
-            this.btnxoa.Text = "Xóa";
-            this.btnxoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnxoa.Click += new System.EventHandler(this.btnxoa_Click);
-            // 
-            // btn_lammoi
-            // 
-            this.btn_lammoi.Image = global::QL_sieuthi.Properties.Resources.icons8_clear_32;
-            this.btn_lammoi.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btn_lammoi.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_lammoi.Name = "btn_lammoi";
-            this.btn_lammoi.Size = new System.Drawing.Size(58, 51);
-            this.btn_lammoi.Text = "Làm mới";
-            this.btn_lammoi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btn_lammoi.Click += new System.EventHandler(this.btn_lammoi_Click);
             // 
             // btnthoat
             // 
@@ -183,11 +158,55 @@
             this.btnthoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click);
             // 
+            // btn_lammoi
+            // 
+            this.btn_lammoi.Image = global::QL_sieuthi.Properties.Resources.icons8_clear_32;
+            this.btn_lammoi.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btn_lammoi.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_lammoi.Name = "btn_lammoi";
+            this.btn_lammoi.Size = new System.Drawing.Size(58, 51);
+            this.btn_lammoi.Text = "Làm mới";
+            this.btn_lammoi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btn_lammoi.Click += new System.EventHandler(this.btn_lammoi_Click);
+            // 
+            // btnxoa
+            // 
+            this.btnxoa.Image = ((System.Drawing.Image)(resources.GetObject("btnxoa.Image")));
+            this.btnxoa.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnxoa.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnxoa.Name = "btnxoa";
+            this.btnxoa.Size = new System.Drawing.Size(36, 51);
+            this.btnxoa.Text = "Xóa";
+            this.btnxoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnxoa.Click += new System.EventHandler(this.btnxoa_Click);
+            // 
+            // btnsua
+            // 
+            this.btnsua.Image = ((System.Drawing.Image)(resources.GetObject("btnsua.Image")));
+            this.btnsua.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnsua.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnsua.Name = "btnsua";
+            this.btnsua.Size = new System.Drawing.Size(36, 51);
+            this.btnsua.Text = "Sửa";
+            this.btnsua.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnsua.Click += new System.EventHandler(this.btnsua_Click);
+            // 
+            // btnThem
+            // 
+            this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
+            this.btnThem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnThem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(41, 51);
+            this.btnThem.Text = "Thêm";
+            this.btnThem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.txtTenNCC);
-            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtMaNCC);
+            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
@@ -199,26 +218,60 @@
             // 
             // txtTenNCC
             // 
-            this.txtTenNCC.Location = new System.Drawing.Point(97, 94);
+            this.txtTenNCC.BorderRadius = 10;
+            this.txtTenNCC.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTenNCC.DefaultText = "";
+            this.txtTenNCC.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTenNCC.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTenNCC.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTenNCC.DisabledState.Parent = this.txtTenNCC;
+            this.txtTenNCC.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTenNCC.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTenNCC.FocusedState.Parent = this.txtTenNCC;
+            this.txtTenNCC.ForeColor = System.Drawing.Color.Black;
+            this.txtTenNCC.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTenNCC.HoverState.Parent = this.txtTenNCC;
+            this.txtTenNCC.Location = new System.Drawing.Point(97, 111);
             this.txtTenNCC.Name = "txtTenNCC";
-            this.txtTenNCC.Size = new System.Drawing.Size(149, 20);
+            this.txtTenNCC.PasswordChar = '\0';
+            this.txtTenNCC.PlaceholderText = "";
+            this.txtTenNCC.SelectedText = "";
+            this.txtTenNCC.ShadowDecoration.Parent = this.txtTenNCC;
+            this.txtTenNCC.Size = new System.Drawing.Size(169, 36);
             this.txtTenNCC.TabIndex = 3;
+            // 
+            // txtMaNCC
+            // 
+            this.txtMaNCC.BorderRadius = 10;
+            this.txtMaNCC.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMaNCC.DefaultText = "";
+            this.txtMaNCC.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtMaNCC.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtMaNCC.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMaNCC.DisabledState.Parent = this.txtMaNCC;
+            this.txtMaNCC.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMaNCC.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMaNCC.FocusedState.Parent = this.txtMaNCC;
+            this.txtMaNCC.ForeColor = System.Drawing.Color.Black;
+            this.txtMaNCC.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMaNCC.HoverState.Parent = this.txtMaNCC;
+            this.txtMaNCC.Location = new System.Drawing.Point(97, 52);
+            this.txtMaNCC.Name = "txtMaNCC";
+            this.txtMaNCC.PasswordChar = '\0';
+            this.txtMaNCC.PlaceholderText = "";
+            this.txtMaNCC.SelectedText = "";
+            this.txtMaNCC.ShadowDecoration.Parent = this.txtMaNCC;
+            this.txtMaNCC.Size = new System.Drawing.Size(169, 36);
+            this.txtMaNCC.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(23, 98);
+            this.label2.Location = new System.Drawing.Point(24, 123);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Tên NCC";
-            // 
-            // txtMaNCC
-            // 
-            this.txtMaNCC.Location = new System.Drawing.Point(97, 59);
-            this.txtMaNCC.Name = "txtMaNCC";
-            this.txtMaNCC.Size = new System.Drawing.Size(100, 20);
-            this.txtMaNCC.TabIndex = 1;
             // 
             // label1
             // 
@@ -263,6 +316,7 @@
             // 
             // panel6
             // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(174)))), ((int)(((byte)(197)))));
             this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel6.Location = new System.Drawing.Point(0, 393);
             this.panel6.Name = "panel6";
@@ -318,7 +372,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox txttimkiem;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ToolStrip toolStrip1;
@@ -328,9 +381,7 @@
         private System.Windows.Forms.ToolStripButton btn_lammoi;
         private System.Windows.Forms.ToolStripButton btnthoat;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtTenNCC;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtMaNCC;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel5;
@@ -339,6 +390,8 @@
         private System.Windows.Forms.DataGridView dtgvNhaCungCap;
         private System.Windows.Forms.BindingSource bdsNhaCungCap;
         private System.Windows.Forms.BindingSource bdsHangHoa;
-
+        private Guna.UI2.WinForms.Guna2TextBox txttimkiem;
+        private Guna.UI2.WinForms.Guna2TextBox txtTenNCC;
+        private Guna.UI2.WinForms.Guna2TextBox txtMaNCC;
     }
 }

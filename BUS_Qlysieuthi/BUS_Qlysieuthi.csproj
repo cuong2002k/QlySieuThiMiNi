@@ -48,6 +48,7 @@
     <Compile Include="BUS_QlyKhachHang.cs" />
     <Compile Include="BUS_Qlykho.cs" />
     <Compile Include="BUS_QlyNhaCungCap.cs" />
+    <Compile Include="BUS_QlyNhaphang.cs" />
     <Compile Include="BUS_QlyNhomHang.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -9,5 +9,6 @@ namespace BUS_Qlysieuthi
     {
        protected DAL_BanHang dalbanhang = new DAL_BanHang();
         protected DAL_HoaDon dalhoadon = new DAL_HoaDon();
+        protected DAL_NhapHang dalnhaphang = new DAL_NhapHang();
     }
 }

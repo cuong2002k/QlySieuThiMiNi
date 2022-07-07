@@ -225,12 +225,19 @@ namespace QL_sieuthi
             LayDSHH(lstvhanghoa, dthanghoa);
         }
 
-        
-        
+        private void guna2GroupBox1_Click(object sender, EventArgs e)
+        {
 
-       
-       
+        }
 
-        
+        private void btnBaoCao_Click(object sender, EventArgs e)
+        {
+            DataTable dtprthanghoa = qlykho.KHO_getHangHoa();
+            ReportHangHoa rpthanghoa = new ReportHangHoa();
+            rpthanghoa.SetDataSource(dtprthanghoa);
+            frm_kho_ReportHH frmrpt = new frm_kho_ReportHH();
+            frmrpt.rpvHangHoa.ReportSource = rpthanghoa;
+            frmrpt.ShowDialog();
+        }
     }
 }

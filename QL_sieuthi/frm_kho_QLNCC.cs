@@ -39,7 +39,14 @@ namespace QL_sieuthi
                 txtMaNCC.Text = dtgvNhaCungCap.SelectedRows[0].Cells[0].Value.ToString();
                 txtTenNCC.Text = dtgvNhaCungCap.SelectedRows[0].Cells[1].Value.ToString();
             }
-                
+            if(dtgvhanghoa.Rows.Count > 1)
+            {
+                btnxoa.Enabled = false;
+            }
+            else
+            {
+                btnxoa.Enabled = true;
+            }
         }
 
         private void btnthoat_Click(object sender, EventArgs e)
@@ -51,7 +58,7 @@ namespace QL_sieuthi
         {
             txtMaNCC.Clear();
             txtTenNCC.Clear();
-
+            txtMaNCC.Focus();
         }
         private bool checktextboxnotnull(){
             if(txtMaNCC.Text == string.Empty){
@@ -69,6 +76,14 @@ namespace QL_sieuthi
         private void btnThem_Click(object sender, EventArgs e)
         {
             if (checktextboxnotnull() == true) {
+                for(int i = 0; i < dtgvNhaCungCap.Rows.Count - 1; i++)
+                {
+                    if (dtgvNhaCungCap.Rows[i].Cells[0].Value.ToString().Equals(txtMaNCC.Text))
+                    {
+                        MessageBox.Show("Mã nhà cung cấp đã tồn tại");
+                        return;
+                    }
+                }
                 DTO_NhaCungCap dtoNCC = new DTO_NhaCungCap(txtMaNCC.Text, txtTenNCC.Text);
                 QlyNCC.NCC_themNhaCungCap(dtoNCC);
                 MessageBox.Show("Thêm Nhà Cung Cấp Thành Công");

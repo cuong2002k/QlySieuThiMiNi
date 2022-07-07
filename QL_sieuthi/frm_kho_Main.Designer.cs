@@ -30,113 +30,178 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQlykho));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btn_kho_QLNH = new System.Windows.Forms.Button();
-            this.btn_kho_QLNCC = new System.Windows.Forms.Button();
-            this.btn_kho_QLHH = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnNhapHang = new Guna.UI2.WinForms.Guna2Button();
+            this.btnnhomhang = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btnHangHoa = new Guna.UI2.WinForms.Guna2Button();
             this.panelchildform = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.btn_kho_QLNH);
-            this.panel1.Controls.Add(this.btn_kho_QLNCC);
-            this.panel1.Controls.Add(this.btn_kho_QLHH);
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(174)))), ((int)(((byte)(197)))));
+            this.panel1.Controls.Add(this.guna2Button5);
+            this.panel1.Controls.Add(this.btnNhapHang);
+            this.panel1.Controls.Add(this.btnnhomhang);
+            this.panel1.Controls.Add(this.guna2Button2);
+            this.panel1.Controls.Add(this.gunaLabel1);
+            this.panel1.Controls.Add(this.guna2PictureBox1);
+            this.panel1.Controls.Add(this.btnHangHoa);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(186, 510);
+            this.panel1.Size = new System.Drawing.Size(210, 510);
             this.panel1.TabIndex = 0;
             // 
-            // button5
+            // guna2Button5
             // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.Location = new System.Drawing.Point(0, 320);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(186, 48);
-            this.button5.TabIndex = 9;
-            this.button5.Text = "Thống kê hàng hóa";
-            this.button5.UseVisualStyleBackColor = true;
+            this.guna2Button5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button5.BorderRadius = 20;
+            this.guna2Button5.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.guna2Button5.CheckedState.FillColor = System.Drawing.Color.White;
+            this.guna2Button5.CheckedState.Parent = this.guna2Button5;
+            this.guna2Button5.CustomImages.Parent = this.guna2Button5;
+            this.guna2Button5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(174)))), ((int)(((byte)(197)))));
+            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button5.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button5.HoverState.Parent = this.guna2Button5;
+            this.guna2Button5.Image = global::QL_sieuthi.Properties.Resources.icons8_goods_32__3_;
+            this.guna2Button5.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button5.Location = new System.Drawing.Point(15, 406);
+            this.guna2Button5.Name = "guna2Button5";
+            this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
+            this.guna2Button5.Size = new System.Drawing.Size(180, 45);
+            this.guna2Button5.TabIndex = 6;
+            this.guna2Button5.Text = "Phiếu Trả Hàng";
+            this.guna2Button5.UseTransparentBackground = true;
             // 
-            // button3
+            // btnNhapHang
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.Location = new System.Drawing.Point(0, 272);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(186, 48);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Quản lý Phiếu Trả";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnNhapHang.BackColor = System.Drawing.Color.Transparent;
+            this.btnNhapHang.BorderRadius = 20;
+            this.btnNhapHang.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnNhapHang.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btnNhapHang.CheckedState.Parent = this.btnNhapHang;
+            this.btnNhapHang.CustomImages.Parent = this.btnNhapHang;
+            this.btnNhapHang.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(174)))), ((int)(((byte)(197)))));
+            this.btnNhapHang.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnNhapHang.ForeColor = System.Drawing.Color.Black;
+            this.btnNhapHang.HoverState.Parent = this.btnNhapHang;
+            this.btnNhapHang.Image = global::QL_sieuthi.Properties.Resources.icons8_goods_32__2_;
+            this.btnNhapHang.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnNhapHang.Location = new System.Drawing.Point(15, 348);
+            this.btnNhapHang.Name = "btnNhapHang";
+            this.btnNhapHang.ShadowDecoration.Parent = this.btnNhapHang;
+            this.btnNhapHang.Size = new System.Drawing.Size(180, 45);
+            this.btnNhapHang.TabIndex = 5;
+            this.btnNhapHang.Text = "Phiếu Nhập Hàng";
+            this.btnNhapHang.UseTransparentBackground = true;
+            this.btnNhapHang.Click += new System.EventHandler(this.btnNhapHang_Click);
             // 
-            // button2
+            // btnnhomhang
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.Location = new System.Drawing.Point(0, 224);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(186, 48);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Quản lý Phiếu Nhập";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnnhomhang.BackColor = System.Drawing.Color.Transparent;
+            this.btnnhomhang.BorderRadius = 20;
+            this.btnnhomhang.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnnhomhang.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btnnhomhang.CheckedState.Parent = this.btnnhomhang;
+            this.btnnhomhang.CustomImages.Parent = this.btnnhomhang;
+            this.btnnhomhang.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(174)))), ((int)(((byte)(197)))));
+            this.btnnhomhang.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnnhomhang.ForeColor = System.Drawing.Color.Black;
+            this.btnnhomhang.HoverState.Parent = this.btnnhomhang;
+            this.btnnhomhang.Image = global::QL_sieuthi.Properties.Resources.icons8_goods_32__1_;
+            this.btnnhomhang.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnnhomhang.Location = new System.Drawing.Point(15, 290);
+            this.btnnhomhang.Name = "btnnhomhang";
+            this.btnnhomhang.ShadowDecoration.Parent = this.btnnhomhang;
+            this.btnnhomhang.Size = new System.Drawing.Size(180, 45);
+            this.btnnhomhang.TabIndex = 4;
+            this.btnnhomhang.Text = "Nhóm Hàng Hóa";
+            this.btnnhomhang.UseTransparentBackground = true;
+            this.btnnhomhang.Click += new System.EventHandler(this.btnnhomhang_Click);
             // 
-            // btn_kho_QLNH
+            // guna2Button2
             // 
-            this.btn_kho_QLNH.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_kho_QLNH.Location = new System.Drawing.Point(0, 176);
-            this.btn_kho_QLNH.Name = "btn_kho_QLNH";
-            this.btn_kho_QLNH.Size = new System.Drawing.Size(186, 48);
-            this.btn_kho_QLNH.TabIndex = 5;
-            this.btn_kho_QLNH.Text = "Quản lý nhóm hàng";
-            this.btn_kho_QLNH.UseVisualStyleBackColor = true;
-            this.btn_kho_QLNH.Click += new System.EventHandler(this.btn_kho_QLNH_Click);
+            this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button2.BorderRadius = 20;
+            this.guna2Button2.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.guna2Button2.CheckedState.FillColor = System.Drawing.Color.White;
+            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
+            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
+            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(174)))), ((int)(((byte)(197)))));
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button2.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button2.HoverState.Parent = this.guna2Button2;
+            this.guna2Button2.Image = global::QL_sieuthi.Properties.Resources.icons8_goods_32;
+            this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button2.Location = new System.Drawing.Point(15, 232);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
+            this.guna2Button2.Size = new System.Drawing.Size(180, 45);
+            this.guna2Button2.TabIndex = 3;
+            this.guna2Button2.Text = "Nhà Cung Cấp";
+            this.guna2Button2.UseTransparentBackground = true;
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
-            // btn_kho_QLNCC
+            // gunaLabel1
             // 
-            this.btn_kho_QLNCC.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_kho_QLNCC.Location = new System.Drawing.Point(0, 128);
-            this.btn_kho_QLNCC.Name = "btn_kho_QLNCC";
-            this.btn_kho_QLNCC.Size = new System.Drawing.Size(186, 48);
-            this.btn_kho_QLNCC.TabIndex = 2;
-            this.btn_kho_QLNCC.Text = "Quản lý Nhà Cung Cấp";
-            this.btn_kho_QLNCC.UseVisualStyleBackColor = true;
-            this.btn_kho_QLNCC.Click += new System.EventHandler(this.btn_kho_QLNCC_Click);
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.gunaLabel1.ForeColor = System.Drawing.Color.Black;
+            this.gunaLabel1.Location = new System.Drawing.Point(25, 110);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(160, 25);
+            this.gunaLabel1.TabIndex = 2;
+            this.gunaLabel1.Text = "Quản Lý Kho Hàng";
             // 
-            // btn_kho_QLHH
+            // guna2PictureBox1
             // 
-            this.btn_kho_QLHH.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_kho_QLHH.Location = new System.Drawing.Point(0, 80);
-            this.btn_kho_QLHH.Name = "btn_kho_QLHH";
-            this.btn_kho_QLHH.Size = new System.Drawing.Size(186, 48);
-            this.btn_kho_QLHH.TabIndex = 1;
-            this.btn_kho_QLHH.Text = "Quản lý hàng hóa";
-            this.btn_kho_QLHH.UseVisualStyleBackColor = true;
-            this.btn_kho_QLHH.Click += new System.EventHandler(this.btn_kho_QLHH_Click);
+            this.guna2PictureBox1.Image = global::QL_sieuthi.Properties.Resources.icons8_goods_64__1_;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(58, 12);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(87, 82);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 1;
+            this.guna2PictureBox1.TabStop = false;
             // 
-            // pictureBox1
+            // btnHangHoa
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox1.Image = global::QL_sieuthi.Properties.Resources.icons8_open_box_80;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(186, 80);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.btnHangHoa.BackColor = System.Drawing.Color.Transparent;
+            this.btnHangHoa.BorderRadius = 20;
+            this.btnHangHoa.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnHangHoa.Checked = true;
+            this.btnHangHoa.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btnHangHoa.CheckedState.Parent = this.btnHangHoa;
+            this.btnHangHoa.CustomImages.Parent = this.btnHangHoa;
+            this.btnHangHoa.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(174)))), ((int)(((byte)(197)))));
+            this.btnHangHoa.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnHangHoa.ForeColor = System.Drawing.Color.Black;
+            this.btnHangHoa.HoverState.Parent = this.btnHangHoa;
+            this.btnHangHoa.Image = global::QL_sieuthi.Properties.Resources.icons8_goods_64;
+            this.btnHangHoa.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnHangHoa.Location = new System.Drawing.Point(15, 174);
+            this.btnHangHoa.Name = "btnHangHoa";
+            this.btnHangHoa.ShadowDecoration.Parent = this.btnHangHoa;
+            this.btnHangHoa.Size = new System.Drawing.Size(180, 45);
+            this.btnHangHoa.TabIndex = 0;
+            this.btnHangHoa.Text = "Hàng Hóa";
+            this.btnHangHoa.UseTransparentBackground = true;
+            this.btnHangHoa.Click += new System.EventHandler(this.btnHangHoa_Click);
             // 
             // panelchildform
             // 
+            this.panelchildform.BackColor = System.Drawing.Color.White;
             this.panelchildform.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelchildform.Location = new System.Drawing.Point(186, 0);
+            this.panelchildform.Location = new System.Drawing.Point(210, 0);
             this.panelchildform.Name = "panelchildform";
-            this.panelchildform.Size = new System.Drawing.Size(632, 510);
+            this.panelchildform.Size = new System.Drawing.Size(608, 510);
             this.panelchildform.TabIndex = 1;
             // 
             // frmQlykho
@@ -150,8 +215,10 @@
             this.Name = "frmQlykho";
             this.Text = "Quản lý kho hàng";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmQlykho_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -159,13 +226,13 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btn_kho_QLHH;
         private System.Windows.Forms.Panel panelchildform;
-        private System.Windows.Forms.Button btn_kho_QLNH;
-        private System.Windows.Forms.Button btn_kho_QLNCC;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button5;
+        private Guna.UI2.WinForms.Guna2Button btnHangHoa;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2Button btnNhapHang;
+        private Guna.UI2.WinForms.Guna2Button btnnhomhang;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI.WinForms.GunaLabel gunaLabel1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button5;
     }
 }
