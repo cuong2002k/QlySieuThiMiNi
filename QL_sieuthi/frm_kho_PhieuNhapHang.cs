@@ -154,7 +154,7 @@ namespace QL_sieuthi
                 dtgvnhacungcap.BackgroundColor = Color.LightGray;
                 dtgvdshanghoa.Enabled = true;
                 dtgvdshanghoa.BackgroundColor = Color.White;
-
+                //
             }
         }
     }
